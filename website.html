@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MITAOE Student Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MITAOE - Past Year Students Records</h1>
+    <nav>
+      <a href="#students">Students</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to MITAOE Records Portal</h2>
+    <p>View, search, and sort the records of our talented alumni.</p>
+  </section>
+
+  <section id="students">
+    <h2>Student Records</h2>
+    <input type="text" id="searchInput" placeholder="Search by Name or Branch">
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">ID</th>
+          <th onclick="sortTable(1)">Name</th>
+          <th onclick="sortTable(2)">Branch</th>
+          <th onclick="sortTable(3)">Passing Year</th>
+          <th onclick="sortTable(4)">Marks (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Students will be inserted here dynamically -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="about">
+    <h2>About MITAOE</h2>
+    <p>MIT Academy of Engineering (MITAOE) is one of the leading engineering colleges in India, nurturing future leaders and innovators.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 MITAOE. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
